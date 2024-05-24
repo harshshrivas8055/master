@@ -1,0 +1,87 @@
+body {
+    background-color: #212529; /* Darker background for better contrast */
+    color: #fff; /* White text color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container for centering content */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Maintain full viewport height */
+  }
+  
+  /* Seed information container */
+  .seed-info {
+    text-align: center;
+    padding: 30px; /* Add padding for better spacing */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: all 0.3s ease; /* Smooth transitions for hover effects */
+  }
+  
+  .seed-info:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Lighten background on hover */
+    transform: scale(1.05); /* Slight zoom on hover for emphasis */
+  }
+  
+  /* Heading style */
+  h1 {
+    font-size: 36px;
+    animation: fadeInUp 1.5s ease-in-out; /* New animation with delay and easing */
+    margin-bottom: 20px;
+  }
+  
+  /* Fade-in animation with slight upward movement */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Tomato image styling */
+  .tomato-image {
+    margin-top: 20px;
+    animation: growRotate 2s ease-in-out; /* New combined animation */
+  }
+  
+  .tomato {
+    width: 200px;
+    height: auto;
+    border-radius: 50%; /* Circular shape for a tomato */
+  }
+  
+  /* Combined grow and rotate animation */
+  @keyframes growRotate {
+    0% {
+      transform: scale(0) rotate(0deg);
+    }
+    50% {
+      transform: scale(1.2) rotate(360deg); /* Grow larger and rotate */
+    }
+    100% {
+      transform: scale(1) rotate(0deg); /* Return to original size and rotation */
+    }
+  }
+  
+  /* Seed details style */
+  .seed-details {
+    margin-top: 20px;
+  }
+  
+  .seed-details h2 {
+    font-size: 24px;
+  }
+  
+  .seed-details p {
+    font-size: 18px;
+  }
